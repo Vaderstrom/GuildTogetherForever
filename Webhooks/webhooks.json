@@ -1,0 +1,24 @@
+{
+  "contract": 1,
+  "id": "guild-together-forever",
+  "name": "Guild Together Forever",
+  "author": "Vaderstrom",
+  "savedVariables": "GuildTogetherForever",
+  "outbox": "GuildTogetherForeverDB.webhooks",
+  "group": "guild",
+  "empty": "Only the guild's Herald posts. The Guild Master chooses the Herald in Guild Together's Guild settings. Log in on the Herald, type /reload, then press Look again.",
+  "kinds": [
+    { "id": "stocks", "type": "news", "name": "Punishments",
+      "help": "Punishments, the Wheel of punishment, bail and pardons.", "default": true },
+    { "id": "arena", "type": "news", "name": "PvP Challenges",
+      "help": "The duel crown, tournament champions, and the Guild Master tournament when a Guild Master is challenged.", "default": true },
+    { "id": "fame", "type": "news", "name": "Hall of Fame",
+      "help": "Deeds as they happen, memorials, the weekly news and the monthly awards.", "default": true, "mention": true },
+    { "id": "tavern", "type": "news", "name": "Gambling",
+      "help": "Deathrolls, high rolls and lottery draws.", "default": false },
+    { "id": "games", "type": "news", "name": "Events",
+      "help": "Events opening and their winners: bingo, the fishing contest, hidden traitors, the gift exchange and the rest.", "default": false },
+    { "id": "council", "type": "news", "name": "Council",
+      "help": "The guild rules, polls, motions and votes, the guild court's verdicts, the Mayor's pick and the guild tax.", "default": false }
+  ]
+}

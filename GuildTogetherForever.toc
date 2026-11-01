@@ -1,0 +1,79 @@
+## Interface: 120105, 16001
+## Title: |cffffd100Guild Together|r Forever
+## Notes: Duels, dice, games, playful punishments, votes and the guild's story, inside the guild window.
+## Author: Vaderstrom
+## Version: @project-version@
+## SavedVariables: GuildTogetherForeverDB
+## SavedVariablesPerCharacter: GuildTogetherForeverCharDB
+## X-Curse-Project-ID: 1778177
+## X-License: MIT
+
+Locales\enUS.lua
+Core\Init.lua
+Core\Util.lua
+Core\Settings.lua
+Core\Combat.lua
+Core\Serialize.lua
+Core\Comm.lua
+Core\Characters.lua
+Guild\Roster.lua
+Guild\Data.lua
+Guild\Players.lua
+Guild\Looks.lua
+Guild\Purse.lua
+Guild\Rules.lua
+Guild\Sync.lua
+Guild\Dice.lua
+Guild\Deathroll.lua
+Guild\RollOff.lua
+Guild\Raffle.lua
+Guild\Payments.lua
+Guild\Bracket.lua
+Guild\Duels.lua
+Guild\Crown.lua
+Guild\Assassins.lua
+Guild\Cup.lua
+Guild\Stocks.lua
+Guild\Punish.lua
+Guild\Seen.lua
+Guild\Calendar.lua
+Guild\Games.lua
+Guild\Traitors.lua
+Guild\Santa.lua
+Guild\Council.lua
+Guild\Court.lua
+Guild\Treasury.lua
+Guild\Chronicle.lua
+Guild\Professions.lua
+Guild\Gatherings.lua
+Guild\Announce.lua
+Guild\Herald.lua
+Guild\Agenda.lua
+UI\Widgets.lua
+UI\Visuals.lua
+UI\Stage.lua
+UI\Scenes.lua
+UI\Side.lua
+UI\Frame.lua
+UI\Hall.lua
+UI\Pages\Settings.lua
+UI\Pages\Arena.lua
+UI\Pages\Stocks.lua
+UI\Pages\Games.lua
+UI\Pages\Council.lua
+UI\Banner.lua
+UI\Alerts.lua
+UI\Pages\Tavern.lua
+UI\Pages\Treasury.lua
+UI\Pages\Chronicle.lua
+UI\Pages\Professions.lua
+UI\Pages\Calendar.lua
+UI\Pages\Home.lua
+UI\Card.lua
+UI\Tour.lua
+UI\Open.lua
+Dev\Peers.lua
+Dev\Sandbox.lua
+Dev\Demo.lua
+Dev\SelfTest.lua
+Core\Slash.lua

@@ -1,0 +1,16 @@
+package-as: GuildTogetherForever
+
+ignore:
+  - docs
+  - tests
+  - tools
+  - art
+  - CLAUDE.md
+  - GuildTogetherForever-Dev.toc
+  - .luacheckrc
+  - .github
+  - RELEASE-NOTES.md
+
+manual-changelog:
+  filename: RELEASE-NOTES.md
+  markup-type: markdown

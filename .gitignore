@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+*.zip
+.release/
+
+# The art tool's pictures (tools/generate-art.ps1); only the converted Media/*.tga are kept.
+art/incoming/*.png
+art/incoming/*.jpg

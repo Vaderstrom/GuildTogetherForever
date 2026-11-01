@@ -1,0 +1,29 @@
+# Packages the addon and uploads it to CurseForge and GitHub Releases
+# when a tag like v0.1.0 is pushed.
+name: Release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      CF_API_KEY: ${{ secrets.CF_API_KEY }}
+      GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+    # Actions are pinned to exact commits: the packager sees the CurseForge key and can write to the repository,
+    # so a later change to an action only runs here once the pin is moved by hand.
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      # The notes on GitHub and CurseForge are this version's section of CHANGELOG.md only ("## 0.10.0 beta (...)"
+      # for v0.10.0-beta); the zip keeps the whole CHANGELOG.md.
+      - name: Release notes
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          version="${version/-/ }"
+          awk -v h="## $version " 'index($0, h) == 1 { on = 1; print; next } on && /^## / { exit } on' CHANGELOG.md > RELEASE-NOTES.md
+          if [ ! -s RELEASE-NOTES.md ]; then echo "CHANGELOG.md has no section \"## $version\""; exit 1; fi
+      - uses: BigWigsMods/packager@e50a250f8705041e40f2fa1ddcb280a686d65aa0 # v2.6.1
